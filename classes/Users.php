@@ -1,8 +1,8 @@
 <?php
 class Users {
-    protected $nome;
-    protected $cognome;
-    protected $eta;
+    private $nome;
+    private $cognome;
+    private $eta;
 
     public function __construct($_nome, $_cognome, $_eta)
     {
