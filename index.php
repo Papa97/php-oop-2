@@ -21,8 +21,7 @@ $Users = [
     
     <h1><?php  
     foreach ($Users as $user){
-        echo "{$User->getNome}";
-        
+        echo "{$user->getNome()}<br>";
     }
     
     ?></h1>
