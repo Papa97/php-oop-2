@@ -1,10 +1,10 @@
 <?php
 include_once __DIR__ . '/classes/Users.php';
-// include_once __DIR__ . './classes/Prodotti.php';
+// include_once __DIR__ . '/classes/Prodotti.php';
 
 $Users = [
-    $guido = new Users('Guido', 'Papa', 24),
-    $luca = new Users('Luca', 'Santoro', 25)
+    $guido = new Users('Guido', 'Papa', 30),
+    $luca = new Users('Luca', 'Santoro', 25),
 ];
 
 ?>
@@ -21,7 +21,7 @@ $Users = [
     
     <h1><?php  
     foreach ($Users as $user){
-        echo "{$user->getNome()}<br>";
+        echo "nome: {$user->getNome()}<br>";
     }
     
     ?></h1>
